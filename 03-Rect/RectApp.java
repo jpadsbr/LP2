@@ -6,18 +6,18 @@ public class RectApp {
 }
 
 class Rect {
-  int x1, y1;
-  int x2, y2;
+  int x, y;
+  int w, h;
 
-  Rect (int x1, int y1, int x2, int y2) {
-    this.x1 = x1;
-    this.y1 = y1;
-    this.x2 = x2;
-    this.y2 = y2;
+  Rect (int x, int y, int w, int h) {
+    this.x = x;
+    this.y = y;
+    this.w = w;
+    this.h = h;
   }
 
   void print () {
-    System.out.format("Linha de posicao inicial (%d,%d) e posicao final (%d,%d).\n",
-    this.x1, this.y1, this.x2, this.y2);
+    System.out.format("Retangulo de posicao (%d,%d) e tamanho (%d,%d).\n",
+    this.x, this.y, this.w, this.h);
   }
 }

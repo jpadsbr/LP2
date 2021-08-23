@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 typedef struct {
-  int x, y;
-  int w, h;
+  int x1, y1;
+  int x2, y2;
 } Rect;
 
 void print (Rect* r) {
-  printf("Retangulo de tamanho (%d,%d) na posicao (%d,%d).\n",
-  r->w, r->h, r->x, r->y);
+  printf("Linha de posicao inicial (%d,%d) e posicao final (%d,%d).\n",
+  r->x1, r->y1, r->x2, r->y2);
 }
 
 void main (void) {
