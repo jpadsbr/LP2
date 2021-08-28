@@ -62,10 +62,10 @@ class Rectangle {
   void paint(Graphics g) {
     Graphics2D g2d = (Graphics2D) g;
 
-    g2d.setColor(new Color(this.r1, this.g1, this.b1));
-    g2d.drawRect(this.x, this.y, this.w, this.h);
-
     g2d.setColor(new Color(this.r2, this.g2, this.b2));
     g2d.fillRect(this.x, this.y, this.w, this.h);
+    
+    g2d.setColor(new Color(this.r1, this.g1, this.b1));
+    g2d.drawRect(this.x, this.y, this.w, this.h);
   }
 }
