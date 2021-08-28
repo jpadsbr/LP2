@@ -17,14 +17,12 @@ class Rect {
     this.h = h;
   }
 
-  void area () {
-    int area = this.w * this.h;
-    System.out.format("Area do retangulo igual a (%d).\n", area);
+  int area () {
+    return this.w * this.h;
   }
 
   void drag (int dx, int dy) {
-    int newXPos = this.x + dx;
-    int newYPos = this.y + dy;
-    System.out.format("Nova posicao do retangulo igual a (%d,%d).\n", newXPos, newYPos);
+    this.x = this.x + dx;
+    this.y = this.y + dy;
   }
 }
